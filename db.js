@@ -6,7 +6,7 @@ async function connect( uri ) {
     await db.connect(uri, {
         useNewUrlParser:true,
         useUnifiedTopology:true,
-        dbName:'PSDB'
+        dbName:'ups'
     })
         .then(() => console.log('[db] Conectada con éxito.'))
         .catch((error) => console.error('[error] ', error))
